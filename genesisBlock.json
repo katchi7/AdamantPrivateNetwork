@@ -1,0 +1,98 @@
+{
+    "version": 0,
+    "totalAmount": 9800000000000000,
+    "totalFee": 9800000000000000,
+    "reward": 100,
+    "payloadHash": "bd330166898377fb28743ceef5e43a5d9d0a3efd9b3451fb7bc53530bb0a6d64",
+    "timestamp": 0,
+    "numberOfTransactions": 6,
+    "payloadLength": 687822,
+    "previousBlock": null,
+    "height": 100,
+    "generatorPublicKey": "32fa1447b404bdb2ee099b624f0c605b220a92afb0faa8dab158ac4c47446b0c",
+    "transactions": [
+        {
+            "type": 0,
+            "amount": 392000000000000,
+            "fee": 0,
+            "recipientId": "U2035390003146980925",
+            "timestamp": 0,
+            "senderId": "U13113937065479682572",
+            "senderPublicKey": "2efef768fc41949aaf5124d7a3663ae843fec87c930494ce37a54d83383b634d",
+            "signature": "d61793303db6c1daa813903a4473f10d0b2f5ab965d2da4b6416bfd3a4482777645bdbca04d3ba89e0e21f96bb01bdf443c354b53991c7a1542626e4b345e804",
+            "id": "9356000252801394663"
+        },
+        {
+            "type": 0,
+            "amount": 392000000000000,
+            "fee": 0,
+            "recipientId": "U9771611677377612635",
+            "timestamp": 0,
+            "senderId": "U13113937065479682572",
+            "senderPublicKey": "2efef768fc41949aaf5124d7a3663ae843fec87c930494ce37a54d83383b634d",
+            "signature": "7e0e97d0c7bd998038525fc8a0b6f8e8199b5e2cea14957bb6d6cb84c87a92e61bca1094401d5034b25cc608919b0e568205549c0ffd0a654ad0e6e9514f7a0e",
+            "id": "8492900626240055298"
+        },
+        {
+            "type": 0,
+            "amount": 784000000000000,
+            "fee": 0,
+            "recipientId": "U5914556729616654544",
+            "timestamp": 0,
+            "senderId": "U13113937065479682572",
+            "senderPublicKey": "2efef768fc41949aaf5124d7a3663ae843fec87c930494ce37a54d83383b634d",
+            "signature": "8a2886180d86550b4d2d55e7ed2de0a5961f82aa453287d59438ec67436387a0fc77a56235f6e41a44e41ccb13e5b3dc297ce6095af3451f42fccd504de1dc06",
+            "id": "4217767741030462211"
+        },
+        {
+            "type": 2,
+            "amount": 0,
+            "fee": 0,
+            "recipientId": null,
+            "timestamp": 0,
+            "asset": {
+                "delegate": {
+                    "username": "node1"
+                }
+            },
+            "senderId": "U2035390003146980925",
+            "senderPublicKey": "32fa1447b404bdb2ee099b624f0c605b220a92afb0faa8dab158ac4c47446b0c",
+            "signature": "05d7db7944333aa9e9688986e97a4db11fc4d48673b854197af9e552aaf8a453baf41efc07993ebc60dccd3956719bd0f3ee7a3978cc76d12b6bdcd06ca0e809",
+            "id": "7440416574486375200"
+        },
+        {
+            "type": 2,
+            "amount": 0,
+            "fee": 0,
+            "recipientId": null,
+            "timestamp": 0,
+            "asset": {
+                "delegate": {
+                    "username": "node2"
+                }
+            },
+            "senderId": "U9771611677377612635",
+            "senderPublicKey": "69b26e24f1160f82dd21e3e51087480b1e0ecc9e5a7eff757d85c5477a466396",
+            "signature": "90c608e4a4045ea31137a015667ff48881a1c09f694e4f76849305621b4f08664f7407c8d992b8cce6817d90e4e57ea60eb9f580b6a259d71763f3f083c95f08",
+            "id": "16367723321377682297"
+        },
+        {
+            "type": 3,
+            "amount": 0,
+            "fee": 0,
+            "recipientId": "U14945793506650192249",
+            "timestamp": 0,
+            "asset": {
+                "votes": [
+                    "+32fa1447b404bdb2ee099b624f0c605b220a92afb0faa8dab158ac4c47446b0c"
+                ]
+            },
+            "senderId": "U14945793506650192249",
+            "senderPublicKey": "e13ef5b96e890c74a0ea241ea3979476afc8129b0a2060e193b85eff6f5773c9",
+            "signature": "fefb349d274519fd3d43bb316d49029bebcbdaafa6e5318b4c258af313364df2104e208b39e8673a84356dc52295bb98bf43045803df44c71a4432e4dd8d8404",
+            "id": "13634160816933352046"
+        }
+    ],
+    "blockSignature": "aefc9475863a15f31de6a3271154c4e8d8241e63965ef92ff87ec297b74ff393c6f5e1244e91a7f69033d6da4222cd2dea5df1fd631eac8f9c01c11dec917a0b",
+    "id": "13096746075322409574"
+}

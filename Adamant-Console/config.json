@@ -1,0 +1,31 @@
+{
+    "network": "mainnet",
+    "rpc": {
+      "port": 5080
+    },
+    "networks": {
+      "testnet": {
+        "nodes": [ {"ip": "127.0.0.1", "protocol": "http", "port": 36667}]
+      },
+      "mainnet": {
+        "nodes": [
+          {
+            "ip": "node",
+            "protocol": "http",
+            "port": "36666"
+          },
+          {
+            "ip": "node2",
+            "protocol": "http",
+            "port": "36666"
+          },
+          {
+            "ip": "node3",
+            "protocol": "http",
+            "port": "36666"
+          }
+        ]
+      }
+    },
+    "passPhrase": "planet mesh file worth borrow jeans urban boost hero dignity prosper scissors"
+  }

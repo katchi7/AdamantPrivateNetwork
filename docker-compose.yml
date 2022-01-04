@@ -1,0 +1,97 @@
+version: '3'
+services:
+  adamant-node:
+    restart: always
+    image: katchi7/my-adamant-node
+    depends_on:
+      - "db"
+    ports:
+      - "36666:36666"
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_NAME=adamant_main
+      - DATABASE_USER=adamant_main
+      - DATABASE_PASSWORD=password
+      - LOG_LEVEL=debug
+      - CONFIG=./config1.json
+      - IP1=adamant-node2
+      - IP2=adamant-node3
+      - HEIGHT=10
+      - FEE=0
+      - NODE_ID=1
+      - SECRET="planet mesh file worth borrow jeans urban boost hero dignity prosper scissors"
+    links:
+      - db
+      
+  adamant-node2:
+    restart: always
+    image: katchi7/my-adamant-node
+    depends_on:
+      - "db2"
+      - "adamant-node"
+    ports:
+      - "36667:36666"
+    environment:
+      - DATABASE_HOST=db2
+      - DATABASE_NAME=adamant_main
+      - DATABASE_USER=adamant_main
+      - DATABASE_PASSWORD=password
+      - LOG_LEVEL=debug
+      - IP1=node
+      - IP2=adamant-node3
+      - HEIGHT=1
+      - FEE=0
+      - NODE_ID=2
+    links:
+      - db2
+      - "adamant-node:node"
+  adamant-node3:
+    restart: always
+    image: katchi7/my-adamant-node
+    depends_on:
+      - "db3"
+      - "adamant-node"
+      - "adamant-node2"
+    ports:
+      - "36668:36666"
+    environment:
+      - DATABASE_HOST=db3
+      - DATABASE_NAME=adamant_main
+      - DATABASE_USER=adamant_main
+      - DATABASE_PASSWORD=password
+      - LOG_LEVEL=debug
+      - NODE_ID=3
+      - IP1=node
+      - IP2=node2
+      - HEIGHT=1
+      - FEE=0
+    links:
+      - db3
+      - "adamant-node:node"
+      - "adamant-node2:node2"
+
+  db:
+    restart: always
+    image: postgres:9.6.3
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=adamant_main
+      - POSTGRES_PASSWORD=password
+  db2:
+    restart: always
+    image: postgres:9.6.3
+    environment:
+      - POSTGRES_USER=adamant_main
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5433:5432"
+  db3:
+    restart: always
+    image: postgres:9.6.3
+    environment:
+      - POSTGRES_USER=adamant_main
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5434:5432"
+      
