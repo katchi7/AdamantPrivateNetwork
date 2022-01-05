@@ -1,4 +1,4 @@
-# ADAMANT node for Docker
+# ADAMANT private blockchain network
 
-Node of ADAMANT network regularly run on Ubuntu. See [ADAMANT node](https://github.com/Adamant-im/adamant). But you can run ADAMANT on other platforms using Docker. Use this repository for this.
+Adamant private network for ssi project
 
